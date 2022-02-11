@@ -1,0 +1,90 @@
+.content {
+  grid-row: 2/3;
+  z-index: 0;
+  position: relative;
+  margin-top: -4rem;
+  &__back {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__header {
+    position: absolute;
+    top: 9.6rem;
+    left: 2rem;
+    font-family: $font-secondary;
+    font-size: 5rem;
+    letter-spacing: 0.8rem;
+    font-weight: bold;
+    color: rgb(90, 194, 112);
+  }
+  &__para {
+    position: absolute;
+    top: 16rem;
+    left: 2.7rem;
+    width: 30%;
+    font-family: $font-primary;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: rgb(196, 187, 151);
+    letter-spacing: 0.1rem;
+  }
+
+  &__btn-1 {
+    height: 2.3rem;
+    width: 7rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 12rem;
+    left: 3rem;
+
+    &:hover {
+      background-color: rgb(216, 216, 216);
+    }
+    .text-1 {
+      font-weight: bold;
+      margin-right: 0.7rem;
+      font-family: $font-third;
+
+      margin-bottom: 0.1rem;
+    }
+
+    .icon-1 {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  &__btn-2 {
+    height: 2.3rem;
+    width: 9rem;
+    position: absolute;
+    bottom: 12rem;
+    left: 11rem;
+    background-color: rgb(97, 96, 96);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.2rem;
+
+    &:hover {
+      background: rgba(105, 105, 105, 0.7);
+    }
+
+    .text-2 {
+      font-weight: bold;
+      color: white;
+      margin-bottom: 0.1rem;
+      font-family: $font-third;
+    }
+    .icon-2 {
+      height: 1.4rem;
+      width: 1.4rem;
+      fill: white;
+    }
+  }
+}

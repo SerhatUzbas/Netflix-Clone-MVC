@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+      
+    /> -->
+    <!-- <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Sass/main.scss" />
+    <script type="module" defer src="src/controller.js"></script>
+
+    <title>Netflix</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          class="header__logo"
+          src="img/netflix-logo.png"
+          alt="netflix-logo"
+        />
+        <nav class="header__nav">
+          <a href="" class="header__nav--item">Ana sayfa</a>
+          <a href="" class="header__nav--item">Diziler</a>
+          <a href="" class="header__nav--item">Filmler</a>
+          <a href="" class="header__nav--item">Yeni ve Popüler</a>
+          <a href="" class="header__nav--item">Listem</a>
+        </nav>
+        <div class="header__profile">
+          <svg class="header__profile--icon">
+            <use xlink:href="img/sprite.svg#icon-user"></use>
+          </svg>
+          <svg class="header__profile--down">
+            <use xlink:href="img/sprite.svg#icon-triangle-down"></use>
+          </svg>
+
+          <ul class="header__profile--nav">
+            <li class="header__profile--nav--item">Manage Profile</li>
+            <li class="header__profile--nav--item">Account</li>
+            <li class="header__profile--nav--item">Help center</li>
+            <li class="header__profile--nav--item">Sign out</li>
+          </ul>
+        </div>
+
+        <svg class="header__notify">
+          <use xlink:href="img/sprite.svg#icon-bell"></use>
+        </svg>
+
+        <div class="header__kid">Kids</div>
+        <div class="header__search">
+          <svg class="header__search--icon">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+          <input
+            class="header__search--input"
+            type="text"
+            placeholder="Movies or TV shows"
+          />
+        </div>
+      </header>
+      <section class="content">
+        <img
+          src="img/green_code-wallpaper-1280x720.jpg"
+          alt="content picture"
+          class="content__back"
+        />
+        <h1 class="content__header">the matrix</h1>
+        <h3 class="content__para">
+          What is the matrix? That question leads computer hacker Neo down a
+          rabbit hole -- and to the mind blowing truth about the world as he
+          knows it.
+        </h3>
+        <div class="content__btn-1">
+          <svg class="icon-1">
+            <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+          </svg>
+          <span class="text-1">Play</span>
+        </div>
+        <div class="content__btn-2">
+          <svg class="icon-2">
+            <use xlink:href="img/sprite.svg#icon-info"></use>
+          </svg>
+          <span class="text-2">More Info</span>
+        </div>
+      </section>
+      <section class="rows">
+        <section class="row">
+          <h1 class="row__header">Popular on Netflix</h1>
+          <svg class="row__icon-1">
+            <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+          </svg>
+          <svg class="row__icon-2">
+            <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+          </svg>
+          <div class="movies"></div>
+        </section>
+        <section class="row">
+          <h1 class="row__header">Most Watched Movies</h1>
+          <svg class="row__icon-1">
+            <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+          </svg>
+          <svg class="row__icon-2">
+            <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+          </svg>
+          <div class="movies"></div>
+        </section>
+
+        <!-- <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="movie slide">
+              <img src="img/oldboy.jpg" alt="" class="movie__img" />
+              <div class="movie__container">
+                <svg class="movie__container--icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                </svg>
+                <svg class="movie__container--icon2">
+                  <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                </svg>
+                <svg class="movie__container--icon3">
+                  <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+              </div>
+            </div> -->
+
+        <!-- <section class="row">
+          <h1 class="row__header">Popular on Netflix</h1>
+          <div class="movie">
+            <img src="img/oldboy.jpg" alt="" class="movie__img" />
+          </div>
+          <div class="movie"></div>
+          <div class="movie"></div>
+          <div class="movie"></div>
+        </section>
+
+        <section class="row">
+          <h1 class="row__header">Popular on Netflix</h1>
+          <div class="movie">
+            <img src="img/oldboy.jpg" alt="" class="movie__img" />
+          </div>
+          <div class="movie"></div>
+          <div class="movie"></div>
+          <div class="movie"></div>
+        </section> -->
+      </section>
+    </div>
+  </body>
+</html>
